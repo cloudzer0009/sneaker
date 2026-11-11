@@ -1,0 +1,6 @@
+Photos used by the site (all .jpg, lowercase names):
+jordan-air, jordan-2, nike-air, nike-runner, puma-suede, puma-speedcat-red, puma-speedcat-maroon,
+adidas-samba, adidas-gazelle, nb-530, nb-runner, converse-hi
+Also: hero.jpg (homepage), cat-basketball.jpg, cat-running.jpg, cat-lifestyle.jpg
+To change a photo, replace the file with the same name. For a new product add a line in script.js
+and a matching images/<id>.jpg
