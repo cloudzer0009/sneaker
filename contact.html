@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - SNEAKERS Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<main>
+  <section class="page-head contact-hero" aria-label="Contact support banner">
+    <h1>Contact Us</h1>
+  </section>
+
+  <section class="section contact-top">
+    <div class="wrap">
+      <div class="contact-layout">
+        <div class="contact-panel reveal">
+          <p class="meta">Need help?</p>
+          <h2>We’re here to help.</h2>
+          <p>Whether you need help with sizing, delivery, or product details, our team is ready to answer your questions quickly and clearly.</p>
+
+          <div class="help-list">
+            <div><strong>Fast replies</strong><span>Usually within 1 business day</span></div>
+            <div><strong>Delivery support</strong><span>Tracking and shipping updates</span></div>
+            <div><strong>Product advice</strong><span>Fit, style, and care help</span></div>
+          </div>
+        </div>
+
+        <div class="contact-cards reveal">
+          <div class="info-card">
+            <span class="mini-label">Call / text</span>
+            <a class="info-phone" href="tel:0915141044">0915141044</a>
+          </div>
+          <div class="info-card">
+            <span class="mini-label">Business hours</span>
+            <strong>Mon-Sat</strong>
+            <small>8:00 AM – 8:00 PM</small>
+          </div>
+          <div class="info-card">
+            <span class="mini-label">Location</span>
+            <strong>Online store</strong>
+            <small>Nationwide delivery</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="contact-form-wrap">
+        <form id="contact-form" class="form reveal" novalidate>
+          <h2>Send a message</h2>
+          <div class="field"><label for="m-name">Name</label><input id="m-name" name="name" autocomplete="name"><span class="msg"></span></div>
+          <div class="field"><label for="m-email">Email</label><input id="m-email" name="email" type="email" autocomplete="email"><span class="msg"></span></div>
+          <div class="field"><label for="m-msg">Message</label><textarea id="m-msg" name="message" rows="5"></textarea><span class="msg"></span></div>
+          <button class="btn lime" type="submit">Send message</button>
+        </form>
+
+        <aside class="support-box reveal">
+          <h3>Quick tips</h3>
+          <ul>
+            <li>Include your order number for faster help.</li>
+            <li>Tell us the shoe size you need.</li>
+            <li>Share your preferred delivery time if relevant.</li>
+          </ul>
+        </aside>
+      </div>
+      <div id="contact-done" class="empty" hidden role="status"></div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

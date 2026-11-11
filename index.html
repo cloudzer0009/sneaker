@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - SNEAKERS Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="index">
+<div id="site-header"></div>
+<main>
+  <section class="home-hero">
+    <div class="wrap">
+      <div class="home-hero-text">
+        <h1>Find your <em>perfect</em> sneakers</h1>
+        <p>Welcome to SNEAKERS Shop, your one-stop online store for stylish and comfortable sneakers.</p>
+        <a class="btn lime" href="product.html">Shop now &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap brands reveal" aria-label="Shop by brand" id="brands"></div>
+
+
+  <section class="perks"><div class="wrap perks-grid reveal">
+    <div><b>01</b><h3>Fair prices</h3><p>Quality sneakers priced for everyone.</p></div>
+    <div><b>02</b><h3>Nationwide shipping</h3><p>Free on orders of &#8369;5,000 and up.</p></div>
+    <div><b>03</b><h3>Easy ordering</h3><p>Pay by cash on delivery, GCash or bank transfer.</p></div>
+    <div><b>04</b><h3>Real support</h3><p>Call or text us at 0915141044.</p></div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <div class="sec-head"><h2>Shop by style</h2></div>
+    <div class="cats reveal">
+      <a class="cat c1" href="product.html?cat=Basketball"><div class="cat-pic" data-shoe="red" data-img="images/cat-basketball.jpg"></div><h3>Basketball</h3></a>
+      <a class="cat c2" href="product.html?cat=Running"><div class="cat-pic" data-shoe="lime" data-img="images/cat-running.jpg"></div><h3>Running</h3></a>
+      <a class="cat c3" href="product.html?cat=Lifestyle"><div class="cat-pic" data-shoe="white" data-img="images/cat-lifestyle.jpg"></div><h3>Lifestyle</h3></a>
+    </div>
+  </div></section>
+
+  <section class="section alt"><div class="wrap">
+    <div class="sec-head"><h2>Trending now</h2>
+      <div class="arrows"><button data-rail="-1" aria-label="Previous">&larr;</button><button data-rail="1" aria-label="Next">&rarr;</button></div>
+    </div>
+    <div class="chips" id="rail-tabs" role="group" aria-label="Trending filters">
+      <button type="button" class="chip on" data-t="new">New arrivals</button>
+      <button type="button" class="chip" data-t="top">Top rated</button>
+      <button type="button" class="chip" data-t="sale">On sale</button>
+    </div>
+    <div class="rail" id="rail"></div>
+  </div></section>
+
+  <section class="section" id="size-finder"><div class="wrap sizer">
+    <div>
+      <h2>Find your size</h2>
+      <p>Stand on a sheet of paper, mark your longest toe and your heel, then measure the distance in centimeters.</p>
+      <form id="size-form" class="form" novalidate>
+        <div class="field"><label for="foot">Foot length (cm)</label>
+          <input id="foot" name="foot" type="number" step="0.1" min="20" max="34" inputmode="decimal" placeholder="e.g. 26.5"><span class="msg"></span></div>
+        <button class="btn lime" type="submit">Get my size</button>
+      </form>
+    </div>
+    <div class="size-result" id="size-result" aria-live="polite"><p class="meta">Your sizes will appear here.</p></div>
+  </div></section>
+
+  <section class="section alt"><div class="wrap">
+    <div class="sec-head"><h2>Keep them fresh</h2></div>
+    <div class="tips reveal">
+      <div class="tip"><b>01</b><h3>Clean often</h3><p>Brush off dirt, then wipe with a damp cloth and mild soap. Skip the washing machine.</p></div>
+      <div class="tip"><b>02</b><h3>Air dry</h3><p>Let them dry naturally away from direct sun or heaters, which can warp glue and soles.</p></div>
+      <div class="tip"><b>03</b><h3>Rotate pairs</h3><p>Give each pair a day off so the cushioning bounces back and moisture clears out.</p></div>
+      <div class="tip"><b>04</b><h3>Store smart</h3><p>Keep them in a cool, dry place and stuff with paper to hold their shape.</p></div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="wrap faq-wrap">
+    <h2>Good to know</h2>
+    <div class="faq">
+      <details><summary>How much is shipping?</summary><p>Shipping is free on orders of &#8369;5,000 and up. Smaller orders have a flat &#8369;150 fee.</p></details>
+      <details><summary>How can I pay?</summary><p>Choose cash on delivery, GCash or bank transfer at checkout.</p></details>
+      <details><summary>What size should I pick?</summary><p>Use the size finder above. Between sizes? Go up to the next whole size for a comfortable fit.</p></details>
+      <details><summary>Can I return a pair?</summary><p>Contact us within 7 days of delivery by call or text at 0915141044 and we will help you.</p></details>
+    </div>
+  </div></section>
+
+  <section class="news"><div class="wrap">
+    <h2>Get new drops first</h2>
+    <form id="news-form" novalidate>
+      <div class="field"><label class="sr-only" for="news-email">Email</label>
+        <input id="news-email" name="email" type="email" placeholder="Your email address" autocomplete="email"><span class="msg"></span></div>
+      <button class="btn lime" type="submit">Subscribe</button>
+    </form>
+    <p id="news-done" class="news-done" role="status" hidden>You are in! Watch your inbox for new drops.</p>
+  </div></section>
+
+  <section class="cta"><div class="wrap">
+    <h2>What are you waiting for?</h2>
+    <p>Step up your style and find your perfect pair today.</p>
+    <a class="btn lime" href="product.html">Shop now &rarr;</a>
+  </div></section>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

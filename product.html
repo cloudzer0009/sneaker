@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - SNEAKERS Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="product">
+<div id="site-header"></div>
+<main>
+  <section class="page-head"><div class="wrap"><h1>Our <em>products</em></h1><p>Check out our latest sneakers.</p></div></section>
+  <section class="section"><div class="wrap">
+    <div class="chips" id="chips" role="group" aria-label="Filter by brand"></div>
+    <div class="tools">
+      <input id="q" type="search" placeholder="Search sneakers..." aria-label="Search sneakers">
+      <select id="cat" aria-label="Style"><option value="">All styles</option><option>Basketball</option><option>Running</option><option>Lifestyle</option></select>
+      <select id="sort" aria-label="Sort by"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="rating">Top rated</option></select>
+    </div>
+    <p id="count" class="meta" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+  </div></section>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>
